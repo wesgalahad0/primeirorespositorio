@@ -1,11 +1,12 @@
 * {
-    background-color: black;
-    color: white;
-}
+    background-color:
+    color(srgb-linear red green blue)}
+
 .contato{
     /*border: 1px solid tomato;*/
-    background-color: hotpink;
+    background-color: gray; 
 }
+
 .info{
     /*border: 1px solid green; */
     display: flex;
@@ -17,14 +18,15 @@
     /*border: 1px salmon*/
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: salmon;
+    color:rgb(233, 142, 130)
 }
+
 
 .bio{
     font-family:'Times New Roman', Times, serif
 }
 
 h1 {
-    color: aqua;
-}
-h2 {color: red;}
+    color:black;}
+
+h2 {color: black;}
