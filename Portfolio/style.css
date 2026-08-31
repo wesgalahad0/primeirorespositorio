@@ -1,32 +1,60 @@
 * {
-    background-color:
-    color(srgb-linear red green blue)}
-
-.contato{
-    /*border: 1px solid tomato;*/
-    background-color: gray; 
+    margin: 0px;
+    padding: 0px;
+}
+/*CSS vem aqui em baixo*/
+header{
+    background-color: #FF9C4A;
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
 }
 
-.info{
-    /*border: 1px solid green; */
+img{
+    width: 550px;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+body a :hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#apres{
+    margin-bottom: 20px;
+    background-color: #FF9C4A;
+    padding-top: 60px;
+}
+
+#sobre{
+    padding-top: 60px;
+}
+
+#habil{
+    padding-top: 60px;
+}
+
+footer{
+    background-color: #45949B;
+}
+
+footer ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
-.mim{
-    /*border: 1px salmon*/
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color:rgb(233, 142, 130)
+.icone{
+    fill:white;
+    stroke:black;
+    stroke-width: 5px;
+    width: 60px;
 }
-
-
-.bio{
-    font-family:'Times New Roman', Times, serif
-}
-
-h1 {
-    color:black;}
-
-h2 {color: black;}
