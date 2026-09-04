@@ -35,12 +35,40 @@ body a:hover{
     padding-top: 60px;
 }
 
+#apres div{
+    justify-content: flex-start;
+}
+
+#apres img{
+    justify-content: flex-end;
+}
+
 #sobre{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
     padding-top: 60px;
+    padding-inline: 50px;
 }
 
 #habil{
     padding-top: 60px;
+}
+
+#habil h3{
+    text-align: center;
+}
+
+.habilidadesContainer{
+    border:blue solid 1px;
+    padding-block: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.habilidadesBloco{
+    border: red solid 2px;
 }
 
 footer{
@@ -60,4 +88,24 @@ footer ul{
     stroke-width: 5px;
     width: 50px;
     height: 50px;
+}
+
+.iconesBloco{
+    border: blue solid 2px;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+}
+
+.iconesContainer{
+    border:red solid 2px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.iconSobre{
+    width: 70px;
+    height: 70px;
 }
