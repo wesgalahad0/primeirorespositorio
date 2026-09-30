@@ -109,3 +109,7 @@ footer ul{
     width: 70px;
     height: 70px;
 }
+
+.modoEscuro{
+   background-color: brown; 
+}
