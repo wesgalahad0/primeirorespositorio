@@ -1,19 +1,21 @@
 //alert("Olá Mundo")
-var meuTitulo = document.getElementById(Titulo)
-let botaoSimples = document.getElementById("simples")
+var meuTitulo = document.getElementById("Cabecalho");
+let botaoSimples = document.getElementById("modoEscuro");
 
-let oFundoEstaescuro = false;
+let oFundoEstaClaro = false;
 
 botaoSimples.onclick = trocaClasse
 
-function trocaClasse () {
-    if (oFundoEstaescuro == false) {
-        meuTitulo.classList.remove("body")
-        meuTitulo.classList.add("modoEscuro");
+function trocaClasse() {
+    if (oFundoEstaClaro == false){
+        meuTitulo.classList.remove("fundoEscuro");
+        meuTitulo.classList.add("fundoClaro");
 
-        oFundoEstaescuro = true;
-    } else { 
-        meuTitulo.classList.add("apres")
-        meuTitulo.classList.remove("modoEscuro")
+        oFundoEstaClaro = true
+    } else {
+        meuTitulo.classList.add("fundoEscuro");
+        meuTitulo.classList.remove("fundoClaro");
+
+        oFundoEstaClaro = false;
     }
 }

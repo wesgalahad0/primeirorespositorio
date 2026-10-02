@@ -110,6 +110,16 @@ footer ul{
     height: 70px;
 }
 
-.modoEscuro{
-   background-color: brown; 
+.fundoEscuro{
+   background-color: brown;
+}
+
+.fundoClaro{
+    background-color: #FF9C4A;
+}
+
+#modoEscuro{
+    background-color:brown ;
+    width: 70px;
+    height: 70px;
 }
