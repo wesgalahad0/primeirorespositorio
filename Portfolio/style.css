@@ -2,48 +2,106 @@
     margin: 0px;
     padding: 0px;
 }
-/*CSS vem aqui em baixo*/
-header{
-    background-color: #FF9C4A;
-    padding: 5px 0px;
-    position: fixed;
-    width: 100%;
-}
 
-img{
-    width: 300px;
-}
-
-body{
+/* ==========================================
+   ESTILOS BASE E TRANSIÇÃO
+   ========================================= */
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body a {
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
-body a:hover{
+body a:hover {
     text-decoration: underline;
     font-weight: bold;
 }
 
-#apres{
-    margin-bottom: 5px;
+/* ==========================================
+   MODO CLARO (Padrão inicial)
+   ========================================= */
+#Cabecalho.fundoClaro,
+#Cabecalho:not(.fundoEscuro) {
     background-color: #FF9C4A;
+    color: #000000;
+}
+
+#Cabecalho.fundoClaro header,
+#Cabecalho.fundoClaro #apres,
+#Cabecalho:not(.fundoEscuro) header,
+#Cabecalho:not(.fundoEscuro) #apres {
+    background-color: #FF9C4A;
+    transition: background-color 0.3s ease;
+}
+
+#Cabecalho.fundoClaro footer,
+#Cabecalho:not(.fundoEscuro) footer {
+    background-color: #45949B;
+    transition: background-color 0.3s ease;
+}
+
+#Cabecalho.fundoClaro #modoEscuro,
+#Cabecalho:not(.fundoEscuro) #modoEscuro {
+    background-color: #FF9C4A;
+    fill: brown;
+}
+
+/* ==========================================
+   MODO ESCURO (Ativado via JS)
+   ========================================= */
+#Cabecalho.fundoEscuro {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+#Cabecalho.fundoEscuro header,
+#Cabecalho.fundoEscuro #apres {
+    background-color: #1a1a1a;
+    transition: background-color 0.3s ease;
+}
+
+#Cabecalho.fundoEscuro footer {
+    background-color: #2b595d;
+    transition: background-color 0.3s ease;
+}
+
+#Cabecalho.fundoEscuro #modoEscuro {
+    background-color: brown;
+    fill: #FF9C4A;
+}
+
+/* ==========================================
+   LAYOUT E ESTRUTURA
+   ========================================= */
+header {
+    padding: 5px 0px;
+    position: fixed;
+    width: 100%;
+}
+
+img {
+    width: 300px;
+}
+
+#apres {
+    margin-bottom: 5px;
     padding-top: 20px;
 }
 
-#apres div{
+#apres div {
     justify-content: flex-start;
 }
 
-#apres img{
+#apres img {
     justify-content: flex-end;
 }
 
-#sobre{
+#sobre {
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -51,88 +109,59 @@ body a:hover{
     padding-inline: 50px;
 }
 
-#habil{
+#habil {
     padding-top: 60px;
 }
 
-#habil h3{
+#habil h3 {
     text-align: center;
 }
 
-.habilidadesContainer{
-    /*border:blue solid 1px;*/
+.habilidadesContainer {
     padding-block: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.habilidadesBloco{
-    /*border: red solid 2px;*/
-}
-
-footer{
-    background-color: #45949B;
-}
-
-footer ul{
+footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
 }
 
-.icone{
+.icone {
     fill: #45739b;
-    stroke:white;
+    stroke: white;
     stroke-width: 5px;
     width: 50px;
     height: 50px;
 }
 
-.iconesBloco{
-    /*border: blue solid 2px;*/
+.iconesBloco {
     display: flex;
     align-content: center;
     justify-items: center;
 }
 
-.iconesContainer{
-    /*border:red solid 2px;*/
-    display:flex;
+.iconesContainer {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 5px;
 }
 
-.iconSobre{
-    width: 70px;
-    height: 70px;
-}
-
-.fundoEscuro{
-   background-color: brown;
-}
-
-.fundoClaro{
-    background-color: #FF9C4A;
-}
-
-#modoEscuro{
-    fill: brown;
-    background-color:#FF9C4A;
+.iconSobre {
     width: 40px;
     height: 40px;
+    stroke-width: 5px;
 }
 
-.iconSobre {
-  width: 40px;
-  height: 40px;
-  stroke-width: 5px;
-}
-
-button {
+#modoEscuro {
+    width: 40px;
+    height: 40px;
     border: none;
     cursor: pointer;
-    transition: .2s;
+    transition: 0.3s;
 }

@@ -2,20 +2,23 @@
 var meuTitulo = document.getElementById("Cabecalho");
 let botaoSimples = document.getElementById("modoEscuro");
 
-let oFundoEstaClaro = false;
+// Começa como 'true' porque a página inicia no Modo Claro
+let oFundoEstaClaro = true;
 
-botaoSimples.onclick = trocaClasse
+botaoSimples.onclick = trocaClasse;
 
 function trocaClasse() {
-    if (oFundoEstaClaro == false){
-        meuTitulo.classList.remove("fundoEscuro");
-        meuTitulo.classList.add("fundoClaro");
-
-        oFundoEstaClaro = true
-    } else {
-        meuTitulo.classList.add("fundoEscuro");
+    if (oFundoEstaClaro == true) {
+        // Se está claro, muda para escuro
         meuTitulo.classList.remove("fundoClaro");
+        meuTitulo.classList.add("fundoEscuro");
 
         oFundoEstaClaro = false;
+    } else {
+        // Se está escuro, muda para claro
+        meuTitulo.classList.add("fundoClaro");
+        meuTitulo.classList.remove("fundoEscuro");
+
+        oFundoEstaClaro = true;
     }
 }
